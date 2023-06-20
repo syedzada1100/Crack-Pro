@@ -20,7 +20,5 @@ elif bit == '32bit':
 	else:
 		from Syed32 import Legend
 		Legend()
-
 else:
-
 	print('\n\x1b[1;91m[×] Your Device is Not Supported This Tool !');exit()
