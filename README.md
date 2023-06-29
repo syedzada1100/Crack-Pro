@@ -10,7 +10,7 @@
 
 ```  
 [+] PLATFORM 32BIT + 64BIT
-[+] PAID COMMANDS
+[+] PAID TOOL
 termux-setup-storage
 apt update -y && apt upgrade -y
 pkg install git -y
