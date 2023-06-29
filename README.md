@@ -12,12 +12,10 @@
 [+] PLATFORM 32BIT + 64BIT
 [+] PAID COMMANDS
 termux-setup-storage
-pkg update -y
-pkg upgrade -y
+apt update -y && apt upgrade -y
 pkg install git -y
 pkg install python -y
 pip install requests
-pip install mechanize
 pip install bs4
 pip install future
 rm -rf Crack-Pro
